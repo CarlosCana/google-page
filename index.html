@@ -3,10 +3,11 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta charset="utf-8">
+<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<title>Google's home page</title>
 </head>
 <body>
-<div>
+<div id="fullpage">
 	<!-- Header of the page-->
 	<div id="header">
 		<div class="headerDiv"><a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=AddSession">Gmail</a></div>
@@ -15,19 +16,20 @@
 		<div class="headerDiv"><button class="button-connexion" type="button" link="https://accounts.google.com/ServiceLogin/identifier?hl=fr&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=AddSession">Connexion</button></div>
 	</div>
 
+	<div id="content">
 	<!--Section logo-->
 	<div id="sectionLogo">
 		<img src="img/google-page-img.png" title="Logo Google">
-	<div>
-
+	</div>
 	<!--Section Barre de recherche -->
 	<div>
 		<div id="search-bar-zone">
 			<div id="search-bar">
-				<div id="cage-style"></div>
+				<div id="cage-style">
 				<form>
 				<input type="text">
 				</form>
+				</div>
 			</div>
 								
 			<div id="button-search">
@@ -36,28 +38,29 @@
 			</div>
 		</div>
 	</div>
-
+	</div>
 	<!--Footer-->
-	<div id="footer">
-		<span>France</span>
-		<span>
-			<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj9zti-0oLcAhUGOxQKHRpIDGEQkdQCCAw&url=https%3A%2F%2Fwww.google.com%2Fintl%2Ffr_fr%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw1aYP8_R8Sd__IBmabb3bt4">Publicité</a>
-			<a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Enterprise</a>
-			<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj9zti-0oLcAhUGOxQKHRpIDGEQkNQCCA4&url=https%3A%2F%2Fwww.google.com%2Fintl%2Ffr_fr%2Fabout%2F%3Futm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw3kaTS9vfl1unWAzGdVAGJD">À propos</a>
-		</span>
-		<span>
-			<a href="https://support.google.com/websearch?p=fr_consumer_info&hl=fr&fg=1">Info consomateurs</a>
-			<a href="https://www.google.com/intl/fr_fr/policies/privacy/?fg=1">Confidentialité</a>
-			<a href="https://www.google.com/intl/fr_fr/policies/terms/?fg=1">Conditions</a>
-			<a href="https://www.google.com/preferences?hl=fr">Paramètres</a>
-		</span>
+	<footer>
+		<div id="footerTop">France</div>
+		<div id="footDown"><div id="footerLeft">
+			<span><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj9zti-0oLcAhUGOxQKHRpIDGEQkdQCCAw&url=https%3A%2F%2Fwww.google.com%2Fintl%2Ffr_fr%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw1aYP8_R8Sd__IBmabb3bt4">Publicité</a></span>
+			
+			<span><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Enterprise</a></span>
+			
+			<span><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwj9zti-0oLcAhUGOxQKHRpIDGEQkNQCCA4&url=https%3A%2F%2Fwww.google.com%2Fintl%2Ffr_fr%2Fabout%2F%3Futm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw3kaTS9vfl1unWAzGdVAGJD">À propos</a></span>
+		</div>
+		<div id="footerRight">
+			<span><a href="https://support.google.com/websearch?p=fr_consumer_info&hl=fr&fg=1">Info consomateurs</a></span>
+			<span><a href="https://www.google.com/intl/fr_fr/policies/privacy/?fg=1">Confidentialité</a></span>
+			<span><a href="https://www.google.com/intl/fr_fr/policies/terms/?fg=1">Conditions</a></span>
+			<span><a href="https://www.google.com/preferences?hl=fr">Paramètres</a></span>
+		</div>
+		</div>
 
 
 		
-	</div>
+	</footer>
 
-
-	</div>
 
 </div>
 
