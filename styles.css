@@ -8,3 +8,15 @@
 {
 	margin: 10px;
 }
+body{
+	font-size: small
+}
+#search-bar-zone{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+#sectionLogo{
+	display: flex;
+	justify-content: center
+}
